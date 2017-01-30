@@ -26,6 +26,13 @@ public class Player {
         if(hand == 3) {setHand("scissors"); setNumValue(3);}
     }
     
+    public Player (String hand)
+    {
+        if(hand.equalsIgnoreCase("rock")) {setHand("rock"); setNumValue(1);}
+        if(hand.equalsIgnoreCase("paper")) {setHand("paper"); setNumValue(2);}
+        if(hand.equalsIgnoreCase("scissors")) {setHand("scissors"); setNumValue(3);}
+    }
+    
     public void setHand(String hand)
     {
         this.hand = hand;
